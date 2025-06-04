@@ -2321,7 +2321,7 @@ GameObject:
   - component: {fileID: 1209936053}
   - component: {fileID: 1209936052}
   m_Layer: 0
-  m_Name: gem_stone
+  m_Name: Gem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
