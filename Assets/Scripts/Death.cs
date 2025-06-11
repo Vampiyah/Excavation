@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class End : MonoBehaviour
+public class Death : MonoBehaviour
 {
 
 
@@ -14,7 +14,7 @@ public class End : MonoBehaviour
         //get the object we collide with
         Collider2D objectWeCollideWith = collisionData.collider;
 
-        ChangeScene("End");
+        ChangeScene("Death");
     }
     public void ChangeScene(string sceneName)
 
@@ -25,4 +25,3 @@ public class End : MonoBehaviour
 
 
 }
-
