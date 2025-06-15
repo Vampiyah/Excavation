@@ -134,9 +134,9 @@ GameObject:
   - component: {fileID: 567901583}
   - component: {fileID: 567901582}
   - component: {fileID: 567901581}
-  - component: {fileID: 567901580}
+  - component: {fileID: 567901584}
   m_Layer: 5
-  m_Name: Button
+  m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -162,18 +162,6 @@ RectTransform:
   m_AnchoredPosition: {x: 20.7, y: -0.3}
   m_SizeDelta: {x: 267.752, y: 67.796}
   m_Pivot: {x: 0.4851409, y: 0.5}
---- !u!114 &567901580
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 567901578}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 693853d93d9711e469e003a4d72c2bc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &567901581
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 567901582}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 567901584}
+        m_TargetAssemblyTypeName: DeathScreenUI, Assembly-CSharp
+        m_MethodName: LoadStartScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &567901582
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -256,6 +256,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567901578}
   m_CullTransparentMesh: 1
+--- !u!114 &567901584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 567901578}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3254dacbb7eb714ca7b6f68cf69e0e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &703505261
 GameObject:
   m_ObjectHideFlags: 0

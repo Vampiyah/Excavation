@@ -13,12 +13,13 @@ public class End : MonoBehaviour
     {
         //get the object we collide with
         Collider2D objectWeCollideWith = collisionData.collider;
-
+        //change the scene to "End" which is the winning scene at the END of the game.
         ChangeScene("End");
     }
     public void ChangeScene(string sceneName)
 
     {
+        // loading the selected scene
         SceneManager.LoadScene(sceneName);
     }
 
